@@ -217,6 +217,17 @@ section{
   left: 800px;
 }
 
+/* Media query untuk layar <= 767px (ponsel) */
+@media (max-width: 767px) {
+  .kolom h2 {
+    font-size: 50px; /* Ukuran font lebih kecil */
+  }
+  .risol {
+    display: none; /* Sembunyikan elemen yang terlalu besar */
+  }
+  /* Ubah posisi elemen lainnya di sini */
+}
+
 .kolom p {
   font-size: 20px;
   font-weight: 550;
@@ -224,6 +235,7 @@ section{
   position: relative;
   top: -15px;
 }
+
 
 
 
