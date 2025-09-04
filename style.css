@@ -223,43 +223,94 @@ section{
   position: relative;
   top: -15px;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .wrapper {
     width: 100%
     padding: 0 15px;
     box-sizing: border box;
     position: relative;
   }
-
-  .logo a {
-    font-size: 20px;
+  /* Navigasi */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    line-height: normal;
+    padding: 10px;
   }
-
+  .logo a {
+    font-size: 24px;
+    line-height: normal;
+  }
   .menu {
     width: 100%;
     margin-top: 10px;
-    float: none;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    padding: 10px 0;
   }
 
-  nav{
-    fkex-direction: column;
-    line-height: normal;
-    padding: 10px;
-
-  .persegigelap {
-    position: relative; 
-    margin-top: 20px; 
-    height: 200px; 
+  /* Elemen Persegi */
+  .persegigelap,
+  .persegiterang {
+    position: relative;
+    height: 300px;
+    margin-top: 20px;
   }
-  .risol {
-    position: absolute;
-    z-index: 100;
-    top: 150px; 
-    left: -250px; 
-    width: 100px;
-    height: 20px;
-    transform: rotate(-33.18deg);
+
+  /* Gambar-gambar (Disembunyikan) */
+  .benang,
+  .risol,
+  .risol1,
+  .risol2,
+  .risol3 {
+    display: none;
+  }
+
+  /* Kolom Teks Utama */
+  .kolom {
+    position: static;
+    transform: none;
+    top: auto;
+    left: auto;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  .kolom .deskripsi {
+    font-size: 1.2rem;
+    left: auto;
+    top: auto;
+  }
+  .kolom h2 {
+    font-size: 3rem;
+    left: auto;
+    margin: 10px 0;
+  }
+  .kolom p {
+    font-size: 1rem;
+    top: auto;
+  }
+
+  /* Tombol Explore */
+  .explore-btn {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+  }
+
+  /* Bagian Products */
+  #Products .kolom h2 {
+    font-size: 2.5rem;
+    padding-top: 20px;
   }
 }
 
