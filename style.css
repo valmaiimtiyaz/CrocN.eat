@@ -247,8 +247,7 @@ section{
     line-height: normal;
     padding: 10px;
 
-  .persegigelap,
-  .persegiterang {
+  .persegigelap {
     position: relative; 
     margin-top: 20px; 
     height: 200px; 
@@ -263,6 +262,7 @@ section{
     transform: rotate(-33.18deg);
   }
 }
+
 
 
 
