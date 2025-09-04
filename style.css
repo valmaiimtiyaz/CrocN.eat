@@ -227,7 +227,6 @@ section{
 @media (max-width: 768px) {
   .wrapper {
     width: 100%
-    max-width: 1000px;
     padding: 0 15px;
     box-sizing: border box;
     position: relative;
@@ -247,6 +246,12 @@ section{
     fkex-direction: column;
     line-height: normal;
     padding: 10px;
+
+  .persegigelap,
+  .persegiterang {
+    position: relative; 
+    margin-top: 20px; 
+    height: 200px; 
   }
   .risol {
     position: absolute;
@@ -258,6 +263,7 @@ section{
     transform: rotate(-33.18deg);
   }
 }
+
 
 
 
