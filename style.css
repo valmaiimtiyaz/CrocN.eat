@@ -42,23 +42,6 @@ body {
   position: relative;
 }
 
-@media (max-width: 767px) {
-  .wrapper {
-    width: 100%
-    max-width: 1000px;
-    position: relative;
-  }
-  .risol {
-    position: absolute;
-    z-index: 100;
-    top: 150px; 
-    left: -250px; 
-    width: 100px;
-    height: 20px;
-    transform: rotate(-33.18deg);
-  }
-}
-
 .logo a{
   font-size: 30px;
   font-weight: bold;
@@ -195,7 +178,6 @@ nav ul li a {
   transform: translate(-50%, -50%);
 }
 
-
 .explore-btn:hover {
   background-color: #6f5294; 
   transform: translate(-50%, -50%) scale(0.8);
@@ -234,17 +216,6 @@ section{
   left: 800px;
 }
 
-/* Media query untuk layar <= 767px (ponsel) */
-@media (max-width: 767px) {
-  .kolom h2 {
-    font-size: 50px; /* Ukuran font lebih kecil */
-  }
-  .risol {
-    display: none; /* Sembunyikan elemen yang terlalu besar */
-  }
-  /* Ubah posisi elemen lainnya di sini */
-}
-
 .kolom p {
   font-size: 20px;
   font-weight: 550;
@@ -252,5 +223,23 @@ section{
   position: relative;
   top: -15px;
 }
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 100%
+    max-width: 1000px;
+    position: relative;
+  }
+  .risol {
+    position: absolute;
+    z-index: 100;
+    top: 150px; 
+    left: -250px; 
+    width: 100px;
+    height: 20px;
+    transform: rotate(-33.18deg);
+  }
+}
+
 
 
