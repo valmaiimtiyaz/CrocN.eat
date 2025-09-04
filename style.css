@@ -224,7 +224,7 @@ section{
   top: -15px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .wrapper {
     width: 100%
     max-width: 1000px;
@@ -240,6 +240,7 @@ section{
     transform: rotate(-33.18deg);
   }
 }
+
 
 
 
