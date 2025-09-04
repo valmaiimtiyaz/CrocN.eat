@@ -232,6 +232,22 @@ section{
     box-sizing: border box;
     position: relative;
   }
+
+  .logo a {
+    font-size: 20px;
+  }
+
+  .menu {
+    width: 100%;
+    margin-top: 10px;
+    float: none;
+  }
+
+  nav{
+    fkex-direction: column;
+    line-height: normal;
+    padding: 10px;
+  }
   .risol {
     position: absolute;
     z-index: 100;
@@ -242,6 +258,7 @@ section{
     transform: rotate(-33.18deg);
   }
 }
+
 
 
 
