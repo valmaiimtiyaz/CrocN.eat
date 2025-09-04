@@ -42,6 +42,23 @@ body {
   position: relative;
 }
 
+@media (max-width: 767px) {
+  .wrapper {
+    width: 100%
+    max-width: 1000px;
+    position: relative;
+  }
+  .risol {
+    position: absolute;
+    z-index: 100;
+    top: 150px; 
+    left: -250px; 
+    width: 100px;
+    height: 20px;
+    transform: rotate(-33.18deg);
+  }
+}
+
 .logo a{
   font-size: 30px;
   font-weight: bold;
@@ -235,4 +252,5 @@ section{
   position: relative;
   top: -15px;
 }
+
 
