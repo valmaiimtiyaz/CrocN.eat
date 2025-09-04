@@ -35,6 +35,11 @@ body {
   font-family : 'Montserrat', sans-serif;
 }
 
+@media (max-width: 768px) {
+  nav .menu-toggle {
+    display: block;
+  }
+  
 .wrapper{
   width: 1000px;
   margin: auto;
@@ -223,3 +228,4 @@ section{
   position: relative;
   top: -15px;
 }
+
