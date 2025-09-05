@@ -13,18 +13,8 @@
   scroll-padding-top : 2rem;
   scroll-behavior: smooth;
   }
-  /* some variables */
-:root {
-  --green-color: #BAD8B6  ;
-  --E1EACD-color: #E1EACD ;
-  --F9F6E6-color: #F9F6E6 ;
-  --purple-color: #8D77AB ;
-  --text-color: #ffffff ;
-  --bg-color: #8D77AB;
-}
 
 *{
-  text-decoration: none;
   margin: 0px;
   padding: 0px;
 }
@@ -37,7 +27,7 @@ body {
 
 .wrapper{
   width: 100%;
-  max-width: 1000px;
+  max-width:1000px;
   margin: auto;
   position: relative;
 }
@@ -45,63 +35,80 @@ body {
 .logo a{
   font-size: 30px;
   font-weight: bold;
+  color: #F9F6E6;
   float: left;
   font-family: 'Montserrat';
-  color: #F9F6E6;
   line-height: 90px;
+  padding-left: 20px;
+  text-decoration: none;
 }
 
 .menu {
+  display: flex;
+  align-items: center;
   float: right;
 }
 
 nav{
+  z-index: 9999;
   width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0%;
+  background: #8D77AB;
   margin: auto;
   display: flex;
   line-height: 90px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  background: #8D77AB;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   overflow: hidden;
+  display: flex;
+  gap: 15px;
 }
 
 nav ul li {
-  float: left;
+  margin-left: 20px;
 }
 
-nav ul li a {
+nav ul li a{
   color : #F9F6E6;
   font-family: 'Montserrat';
-  font-weight: medium;
+  font-weight: 500;
   text-align: center;
-  padding: 0px 16px 0px 16px;
+  padding: 0px 16px;
   text-decoration: none;
+  display: inline-block;
+  transition: text-decoration 0.3s ease;
+
+}
+
+nav ul li a:hover{
+  text-decoration: underline;
 }
 
 .persegigelap {
   position: absolute;
-  margin-top: -67px;
-  width: 100%;
-  height: 100%;
+  margin-top: -20px;
+  margin-left: -140px;
+  width: 127%;
+  height: 100vh;
   border-radius: 20px; 
   background-color: #E1EACD;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+
 }
 
 .persegiterang{
   position: absolute;
-  margin-top: -40px;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px; 
+  margin-top: 15px;
+  margin-left: -140px;
+  width: 127%;
+  height: 100vh;
+  border-radius: 30px; 
   background-color: #F9F6E6;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8)
 }
@@ -109,11 +116,10 @@ nav ul li a {
 .benang {
   position: absolute;
   z-index: 100;
-  top: -230px;
+  top: 203px;
   width: 850px;
-  height: 750px;
+  height: 725px;
   left: 50%;
-  top: 198px;
   transform: translate(-50%, -50%);
   justify-content: center; /* horizontal tengah */
   align-items: center;
@@ -164,18 +170,19 @@ nav ul li a {
   background-color: #8a6cb0;   
   color: white;              
   padding: 12px 24px;          
-  font-size: 20px;             
+  font-size: 15px;             
   font-weight: Bold;           
   border: none;                
-  border-radius: 10px;       
+  border-radius: 25px;       
   cursor: pointer;             
   text-decoration: none;       
   display: inline-block;       
   transition: background 0.3s ease, transform 0.2s ease;
   z-index: 100;
   left: 50%;
-  top: 370px;
+  top: 95px;
   transform: translate(-50%, -50%);
+  justify-content: center;
 }
 
 .explore-btn:hover {
@@ -183,30 +190,52 @@ nav ul li a {
   transform: translate(-50%, -50%) scale(0.8);
 }
 
+.kolam h2{
+  font-size: 50px;
+  top: 300px;
+}
+
 section{
   z-index: 100;
   margin: auto;
   display: flex;
   margin-bottom: 50px;
+  position: relative;
+  max-width:1000px;
 }
 
 .kolom {
-  position: absolute;                  
-  z-index: 200;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  min-height: 100vh; 
+  top: 80px;
+  justify-content: center; 
+  align-items: center; 
   text-align: center;
-  color: #8D77AB;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  color: #8a6cb0;
+  position: relative;
+  z-index: 200;
 }
 
 .kolom .deskripsi {
-  font-size: 30px;
-  font-weight: 550;
+  font-size: 25px;
+  font-weight: 650;
   margin-bottom: 10px;
   position: relative;
   top: 30px;
-  left: 180px;
+  left: -170px;
+
+}
+
+h2 {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 45px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color:#8a6cb0;
+  
 }
 
 .kolom h2 {
@@ -218,11 +247,11 @@ section{
 
 .kolom p {
   font-size: 20px;
-  font-weight: 550;
-  margin-top: 0;
+  font-weight: 650;
   position: relative;
   top: -15px;
 }
+
 @media (max-width: 767px) {
   .wrapper {
     width: 100%
@@ -313,6 +342,7 @@ section{
     padding-top: 20px;
   }
 }
+
 
 
 
